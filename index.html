@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <!--<script defer src="app.js"></script>-->
+    <script defer src="javascripts/main.js"></script>
+    <!--<script defer src="Añadiralcarrito.js"></script>-->
+    <script defer src="javascripts/Menu.js"></script>
+    <script defer src="javascripts/Carrito.js"></script>
+    <script defer src="javascripts/barrabusqueda.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AXZDDiyyBOr5DJp_n93cZNfutgVnEkguR0_2lui0w513Db-4XwRb_2fnrh5v6IX9vII3zJz9NuCTAi8C&currency=MXN"></script>
+    <title>Veterinaria Love Animals</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor menu">
+            <a href="#" class="logo">Love Animals</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="Imagenes/Logo de sitio web Love Animals-01.png" class="menu_icono" alt="" srcset="" width="120px"
+                    height="120px">
+            </label>
+            <nav class="Navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li class="mascotas">
+                        <a href="#">Mascotas</a>
+                        <ul class="menu_vertical">
+                            <li><a href="#productos">Perros</a></li>
+                            <li><a href="#" id="Abrir-modal-gatos">Gatos</a></li>
+                            <dialog id="modal_Gatos">
+                                <div class="Apartado_Gatos">
+                                    <h1>Consigue los mejores productos para tu felino</h1>
+                                    <button id="cerrar-modal-gatos"><b>X</b></button>
+                                </div>
+                                <p>Gatos</p>
+
+                                <div class="contenedor-carrusel">
+                                    <div class="carrusel">
+                                        <div class="slick-list" id="slick-list">
+                                            <button class="slick_arrow slick-prev" id="button-prev"
+                                                data-button="button-prev" onclick="app.processingButton(event)">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                    data-icon="chevron-left"
+                                                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                                    <path fill="currentColor"
+                                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+
+                                            <div class="slick-track track-gatos" id="track">
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img_1_alimentos_gatos.png"
+                                                            alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Wiskas</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Es capaz de mejorar el tracto urinario, mientras sus
+                                                                ingredientes potenciales nutren a tu mascota de adentro
+                                                                hacia afuera, tiene una rica mezcla de vegetales, fibra
+                                                                y carne. Aporta una alimentación completa, cada croqueta
+                                                                tiene un rico relleno cremoso que de verdad le
+                                                                encantará, es apta para ser consumida por gatos adultos
+                                                                mayores a un año.
+                                                            </p>
+                                                            <p><span class="precio">127920</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3"
+                                                                data-id="6">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img_2_alimentos_gatos.png"
+                                                            alt="Imagenes_ali_1" height="160px">
+                                                        <div class="productostxt">
+                                                            <h3>Cookie gatos</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Alimento energético, completo y equilibrado, altamente
+                                                                digestible y de elevada palatabilidad, destinado al
+                                                                mantenimiento de gatos de cualquier raza y tamaño.
+                                                                Elaborado con materias primas de alta calidad.
+                                                                Copiado de:
+                                                                https://www.agro-natura.com/producto/bb-cookie-alimento-para-gatos-20-kg/
+
+                                                            </p>
+                                                            <p><span class="precio">127620</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3"
+                                                                data-id="7">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img-ali3-gatos.png" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Pro Plan</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Alimento completo y balanceado para gatos poco activos o
+                                                                con exceso de peso.
+                                                                Es una tecnología exclusiva, gracias a la reducción de
+                                                                un 35%* de las grasas, junto con unos niveles elevados
+                                                                de proteínas y fibras naturales, para reducir peso y
+                                                                mantener una condición corporal saludable. *respecto de
+                                                                la fórmula PRO PLAN® Adult con OptiPrebio®
+                                                            </p>
+                                                            <p><span class="precio">17254</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3"
+                                                                data-id="8">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img-ali4-gatos.jpg" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Royal Chanin</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                La salud de los gatos es delicada y muchos gatos adultos
+                                                                pueden tener problemas de salud, ya sea relacionados con
+                                                                el peso, las bolas de pelo u otras enfermedades comunes.
+                                                                Los gatos son animales enigmáticos, por lo que no
+                                                                siempre es fácil detectar y diagnosticar sus
+                                                                sensibilidades. Sin embargo, es fundamental
+                                                                proporcionarles los mejores cuidados de forma proactiva
+                                                                para que disfruten de una salud óptima. Obtén más
+                                                                información sobre nuestras soluciones relacionadas:
+                                                                Appetite Control; Light Weight; Hair & Skin; Urinary;
+                                                                Digestive; Hairball; Dental Care.
+                                                            <p><span class="precio">54000</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3"
+                                                                data-id="9">Agregar al
+                                                                carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img_Med_2.jpg" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Gastropet</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Producto homeopático en tabletas que sirve como coadyuvante en el tratamiento de
+                                                                los procesos de irritación de la mucosa gástrica y de modo preventivo.
+                                                                Desparasitar a tu perro nunca fue tan cómodo: Simparica Trio hace la función de
+                                                                dos o más agentes antiparasitarios
+                                                            </p>
+                                                            <p><span class="precio">47900</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="12">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img_Med_4.png" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Cardiozepril</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Tratamiento de la insuficiencia cardíaca congestiva leve ó moderada en perros de 5 ó más kg de peso vivo. Tratamiento de la insuficiencia renal crónica en gatos de 2,5 ó más kg de peso vivo.
+                                                            </p>
+                                                            <p><span class="precio">16890</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="14">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img-med1-gatos.png" alt="Imagenes_ali_1" height="160px">
+                                                        <div class="productostxt">
+                                                            <h3>Bravecto</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Antiparasitario externo de acción sistémica. Solución tópica para gatos.
+                        
+                                                                Solución translúcida de incolora a amarilla.
+                                                                
+                                                                Este medicamento de uso veterinario está destinado al tratamiento y prevención de infestaciones de pulgas y para el tratamiento y control de infestaciones por garrapatas que proporciona:
+                                                                
+                                                                actividad inmediata y persistente durante 12 semanas para matar pulgas (Ctenocephalides felis y C. canis),
+                                                                actividad inmediata y persistente durante 12 semanas para matar garrapatas (Ixodes ricinus, Rhipicephalus sanguineus).
+                                                                Las pulgas y garrapatas deben adherirse al hospedador y comenzar a alimentarse para exponerse a la substancia activa. El efecto comenzará en las 8 horas siguientes a la fijación para las pulgas y 12 horas para las garrapatas.
+                                                                
+                                                                El producto controla eficazmente las poblaciones de pulgas en las áreas a las cuales tienen acceso los gatos tratados.                                    </p>
+                                                            <p><span class="precio">91700</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="15">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/img-med3-gatos.png" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>UROVIER</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Insuficiencia renal crónica (IRC), infecciones del tracto urinario, Cistitis, formación y disolución de cálculos de estruvita, Síndrome Urológico Felino (FUS o FLUTD*). Prostatitis y afecciones benignas de próstata.
+                        
+                                                                Síndrome Urológico Felino, FUS o FLUTD: grupo de síntomas de las vías urinarias del gato, que incluye distensión, obstrucción de la uretra o constante eliminación de orina si la uretra no está obstruida. Sus causas principales son los cálculos vesicales, obstrucciones de la uretra, infecciones de las vías urinarias o el cáncer del aparato urinario.
+                                                            </p>
+                                                            <p><span class="precio">16929</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="16">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/img-acc1-gatos.png" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Ratones de juguete para tus gato</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p><span class="precio">45000</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="24">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/img-acc2-gatos.png" alt="Imagenes_ali_1" height="160px">
+                                                        <div class="productostxt">
+                                                            <h3>raton de jueguete para tus gatos</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p><span class="precio">20000</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="25">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/img-acc3-gatos.png" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Casa para tu gato</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p><span class="precio">75000</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="26">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="slick_arrow slick-next" id="button-next"
+                                            data-button="button-next" onclick="app.processingButton(event)">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="chevron-right"
+                                                class="svg-inline--fa fa-chevron-right fa-w-10" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                                <path fill="currentColor"
+                                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </dialog>
+                            <li><a href="#" id="Abrir-modal-Equinos">Equinos</a></li>
+                            <dialog id="modal_Equinos">
+                                <div class="Apartado_Equinos">
+                                    <h1>Consigue los mejores productos para tu felino</h1>
+                                    <button id="cerrar-modal-Equinos">X</button>
+                                </div>
+                                <p>Equinos</p>
+
+                                <div class="contenedor-carrusel">
+                                    <div class="carrusel">
+                                        <div class="slick-list" id="slick-list">
+                                            <button class="slick_arrow slick-prev" id="button-prev"
+                                                data-button="button-prev" onclick="app.processingButton(event)">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                    data-icon="chevron-left"
+                                                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                                    <path fill="currentColor"
+                                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+
+                                            <div class="slick-track track-Equinos" id="track">
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/img-ali2-cab.png" alt="Imagenes_ali_1" height="160px">
+                                                        <div class="productostxt">
+                                                            <h3>Cipa</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Es un alimento 100% cocido, para suministrar a equinos adultos, con trabajo
+                                                                intenso destinados a competencias de todo tipo o en estados de convalecencia,
+                                                                como suplemento a los pastos, según el tipo de manejo, la cantidad y calidad de
+                                                                forraje.
+                                                            </p>
+                                                            <p><span class="precio">132400</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="10">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img-ali1-cab.png" alt="Imagenes_ali_1" height="160px">
+                                                        <div class="productostxt">
+                                                            <h3>Campeon Derby</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Es un alimento 100% cocido, para suministrar a equinos adultos, con trabajo
+                                                                intenso destinados a competencias de todo tipo o en estados de convalecencia,
+                                                                como suplemento a los pastos, según el tipo de manejo, la cantidad y calidad de
+                                                                forraje.
+                                                            </p>
+                                                            <p><span class="precio">130000</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="10">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Ima-med1-cab.png" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Cabatel</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Endectocida de amplio espectro indicado en Equinos para el tratamiento y control
+                                                                de parásitos gastrointestinales, pulmonares y cutáneos tales como: Strongylus
+                                                                vulgaris, Strongylus edentatus, Strongylus equinus: (fases infectantes larvarias y
+                                                                adultos). Triodontophorus spp. Oxyuris equi, Trichostrongylus axei, Strongyloides
+                                                                westeri, Parafilaria multipapillosa. Onchocerca spp, Draschia megastoma,
+                                                                Habronema spp, Anoplocephala magna, Anoplocephala perfoliata,
+                                                                Paranoplocephala mamillana. Echinococcus granulosus, Dictyocaulus arnfieldi y
+                                                                Gasterophilus spp                                    </p>
+                                                            <p>
+                                                            <span class="precio">31200</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="18">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/Img-med2-cab.png" alt="Imagenes_ali_1" height="160px">
+                                                        <div class="productostxt">
+                                                            <h3>Pareun®/h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Pareun® es indicado para el tratamiento de las enfermedades infecciosas bacterianas en equinos causadas por agentes sensibles a Amikacina. Los agentes etiológicos susceptibles al Pareun® son: Escherichia coli, Enterobacter aerogenes, Klebsiella pneumoniae, Listeria monocytogenes, Pseudomonas aeruginosa, Salmonella newport, Salmonella typhimurium, Serratia marcescens, Staphylococcus aureus y Staphylococcus intermedius.
+                        
+                                                                Algunas enfermedades que acometen los caballos son procedentes de infecciones bacterianas causadas por estos microorganismos y están generalmente relacionadas con el tracto respiratorio, trastornos hepáticos, músculo-esqueléticas, tractos geniturinario y gastrointestinal, sistemas nervioso, piel y enfermedades oculares.                                   </p>
+                                                            <p>
+                                                            <p><span class="precio">65000</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="19">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/img-med3-cab.png" alt="Imagenes_ali_1" height="160px">
+                                                        <div class="productostxt">
+                                                            <h3>Aminomix</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p class="descripcion">
+                                                                Suplemento con nutrientes esenciales para la alimentación del caballo atleta. Reúne en su formulación macro y microminerales, vitaminas, levaduras, además de aminoácidos esenciales y de importancia.
+                        
+                                                                Contiene hierro, cobre y zinc quelatados, lo que mejora el aprovechamiento de los mismos y asegura la absorción de las vitaminas por la no formación de complejos insolubles.
+                                                            <p>
+                                                            <p><span class="precio">176700</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="20">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/img-acc1-cab.jpg" alt="Imagenes_ali_1" height="160px">
+                                                        <div class="productostxt">
+                                                            <h3>Montura de caballo</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p><span class="precio">110000</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="27">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick">
+                                                    <div class="box">
+                                                        <img src="Imagenes/img-acc2-cab.jpg" alt="Imagenes_ali_1">
+                                                        <div class="productostxt">
+                                                            <h3>Bozal para caballo</h3>
+                                                            <P>Calidad premium</P>
+                                                            <p><span class="precio">50000</span>$</p>
+                                                            <a href="#" class="agregar-carrito btn_3" data-id="28">Agregar al carrito</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="slick_arrow slick-next" id="button-next"
+                                            data-button="button-next" onclick="app.processingButton(event)">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="chevron-right"
+                                                class="svg-inline--fa fa-chevron-right fa-w-10" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                                <path fill="currentColor"
+                                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </ul>
+
+                    </li>
+                    <li><a href="#productos">Productos</a>
+                        <!--<ul class="menu_vertical">
+                            <li><a href="#">IDDEX</a></li>
+                            <li><a href="#">Bayer</a></li>
+                            <li><a href="#">Ceva</a></li>
+                        </ul>-->
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="buscador">
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar">
+                <div class="track-busqueda">
+                    <ul id="listaarticulos">
+                        <li class="card">Champion dog
+                            <div class="informacion-producto">
+                            <img src="Imagenes/img_1_alimentos.jpg" alt="Imagenes_ali_1">
+                            <h3>Champion Dog</h3>
+                            <p><span class="precio">30000</span>$</p>
+                            <a href="#" class="agregar-carrito btn_3" data-id="1">Agregar al carrito</a>
+                            </div>
+                        </li> 
+                        <li class="card">Agility gold
+                            <div class="informacion-producto">
+                            <img src="Imagenes/Img_Alimentos_2.png" alt="Imagenes_ali_1">
+                                    <h3>Agility Gold</h3>
+                                    <p><span class="precio">36000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="2">Agregar al carrito</a>
+                                </div>
+                        </li>
+                        <li class="card">ERA
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Imagen_3_alimentos.png" alt="Imagenes_ali_1">
+                                    <h3>Era</h3>
+                                    <p><span class="precio">82790</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="3">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Br Dog
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_Alimentos_4.png" alt="Imagenes_ali_1">
+                                    <h3>BR Dog</h3>
+                                    <p><span class="precio">292000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="4">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Canes Gold
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_5_alimento.png" alt="Imagenes_ali_1" height="160px">
+                               
+                                    <h3>Canes Gold</h3>
+                                    
+                                    
+                                    <p><span class="precio">40900</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="5">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Wiskas
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_1_alimentos_gatos.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>Wiskas</h3>
+                                    
+                                    
+                                    <p><span class="precio">127920</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="6">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Cookie Gatos
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_2_alimentos_gatos.png" alt="Imagenes_ali_1" height="160px">
+                                    <h3>Cookie Gatos</h3>
+                                    <p><span class="precio">127620</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="7">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Pro plan
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img-ali3-gatos.png" alt="Imagenes_ali_1">
+                               
+                                    <h3>Pro Plan</h3>
+                                    
+                                    
+                                    <p><span class="precio">17254</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="8">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Royal Chanin
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img-ali4-gatos.jpg" alt="Imagenes_ali_1">
+                                
+                                    <h3>Royal Chanin</h3>
+                                    
+                                    <span class="precio">54000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="9">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Campeon Derby
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img-ali1-cab.png" alt="Imagenes_ali_1" height="160px">
+                                    <h3>Campeon Derby</h3>
+                                    <p><span class="precio">128400</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="10">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Cioa
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-ali2-cab.png" alt="Imagenes_ali_1" height="160px">
+                                
+                                    <h3>Cipa</h3>
+                                    
+                                    
+                                    <p><span class="precio">132400</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="10">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Simparica Trio
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_med_1.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>Simparica Trio</h3>
+                                    
+                                    <p><span class="precio">41400</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="11">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Gastropet
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_Med_2.jpg" alt="Imagenes_ali_1">
+                                
+                                    <h3>Gastropet</h3>
+                                    
+                                    <p><span class="precio">47900</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="12">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card"> Amigo calcio
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_med_2.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>Amigo calcio</h3>
+                                    
+                                    <p><span class="precio">27900</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="13">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_Med_4.png" alt="Imagenes_ali_1">
+    
+                                    <h3>Cardiozepril</h3>
+                            
+                                    <p><span class="precio">16890</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="14">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Bravecto
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img-med1-gatos.png" alt="Imagenes_ali_1" height="160px">
+                                
+                                    <h3>Bravecto</h3>
+                                    
+                                    <p><span class="precio">91700</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="15">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-med3-gatos.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>UROVIER</h3>
+                                    
+                                    <p><span class="precio">16929</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="16">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Attack GMP
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img.med2-gatos.png" alt="Imagenes_ali_1" height="160px">
+                               
+                                    <h3>Attack GMP</h3>
+                                   
+                                    <p><span class="precio">25900</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="17">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Cabatel
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Ima-med1-cab.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>Cabatel</h3>
+                                    
+                                    
+                                    <span class="precio">31200</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="18">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Pareun®
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img-med2-cab.png" alt="Imagenes_ali_1" height="160px">
+                               
+                                    <h3>Pareun®</h3>
+                                    <p><span class="precio">65000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="19">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Aminomix
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-med3-cab.png" alt="Imagenes_ali_1" height="160px">
+                               
+                                    <h3>Aminomix</h3>
+                                    
+                                    <p><span class="precio">176700</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="20">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">collar para perro o gato
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-acc-1.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>collar para perro o gato</h3>
+                                    
+                                    <p><span class="precio">23000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="21">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Pelota para perro
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-acc-2.jpg" alt="Imagenes_ali_1">
+                                
+                                    <h3>Pelota para perro</h3>
+                                    
+                                    <p><span class="precio">15000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="22">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Casa para perro
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img-acc-3.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>Casa para perro</h3>
+                                    <p><span class="precio">60000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="23">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Ratones de juguete para tus gato
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-acc1-gatos.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>Ratones de juguete para tus gato</h3>
+                                    
+                                    <p><span class="precio">45000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="24">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">raton de jueguete para tus gatos
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-acc2-gatos.png" alt="Imagenes_ali_1" height="160px">
+                                
+                                    <h3>raton de jueguete para tus gatos</h3>
+                                    
+                                    <p><span class="precio">20000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="25">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Casa para tu gato
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-acc3-gatos.png" alt="Imagenes_ali_1">
+                                
+                                    <h3>Casa para tu gato</h3>
+                                   
+                                    <p><span class="precio">75000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="26">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Montura de caballo
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-acc1-cab.jpg" alt="Imagenes_ali_1" height="160px">
+                                
+                                    <h3>Montura de caballo</h3>
+                                    
+                                    <p><span class="precio">110000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="27">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Bozal para caballo
+                            <div class="informacion-producto">
+                                <img src="Imagenes/img-acc2-cab.jpg" alt="Imagenes_ali_1">
+                                
+                                    <h3>Bozal para caballo</h3>
+                                    
+                                    <p><span class="precio">50000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="28">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Pelota
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_Acc_1.jpg" alt="Imagenes_ali_1" height="160px">
+                                
+                                    <h3>Pelota</h3>
+                                    
+                                    <p><span class="precio">28000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="29">Agregar al carrito</a>
+                            </div>
+                        </li>
+                        <li class="card">Cepillo para tus Mascotas
+                            <div class="informacion-producto">
+                                <img src="Imagenes/Img_Acc_2.png" alt="Imagenes_ali_1" height="160px">
+                                
+                                    <h3>Cepillo para tus Mascotas</h3>
+                                    
+                                    <p><span class="precio">20000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="30">Agregar al carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <a href="./TarjetaPago.html" target="_blank" class="Tarjetadedebito btn_2">Pagar con Tarjeta</a>
+            <div class="MainCarrito">
+                <ul>
+                    <li class="submenu">
+                        <p class="count-product">0</p>
+                        <img class="img-carrito" src="Imagenes/Icono de carrito.png" alt="" width="20px" height="20px">
+                        
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciacarrito">Vaciar carrito</a>
+                            <h2 class="precio-total" id="pricetotal">0</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="header_contener">
+            <div class="header_imagenes">
+                <img src="Imagenes/Img_Principal.png" alt="" srcset="">
+            </div>
+            <div class="header_txt">
+                <h1>
+                    Bienvenido a tu tienda Love Animals
+                </h1>
+                <span>Encuentra todos tus pedidos para el bienestar de tu animalito</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis itaque cupiditate vero tempore et
+                    reiciendis molestiae, ipsam rem ratione quis dolorum repellendus porro facere quod animi obcaecati
+                    minima explicabo earum.</p>
+                <div class="botones">
+                    <a href="#" class="btn_1">Informacion</a>
+                    <a href="#" class="btn_1">Leer mas</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="ofertas_Contenedor" id="track-precios-ofertas">
+        <h1 class="Titulo_ofertasEspeciales">Ofertas Especiales</h1>
+        <div class="oferta_1">
+            <div class="ofertatxt">
+                <h3>Champion dog</h3>
+                <p class="show">
+                    Alimento ideal para perros con metabolismo rápido y estómago pequeño
+                </p>
+                <span class="hide" id="hidetext">
+                    <p>
+                        Con requerimientos nutricionales específicos y croquetas pequeñas acorde al tamaño
+                        de su mandíbula. OVO PROTEÍNA La proteína del huevo, de fácil digestión y con
+                        aminoácidos esenciales que permiten un sano desarrollo.
+                    </p>
+                </span>
+                <button class="readmorebtn" id="hidetextbtn">Leer mas</button>
+            </div>
+            <div class="track-ofertas">
+                <img src="Imagenes/img_1_alimentos.jpg" alt="Oferta1" width="200px" height="180px">
+                <div class="precios-ofertas">
+                    <p><span class="precio-aumentado"><u>35000$</u></span></p>
+                    <p><span class="precio">30000</span>$</p>
+                </div>
+                <a href="#" class="agregar-carrito btn_3" data-id="1">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="oferta_1">
+            <div class="ofertatxt">
+                <h3>Era</h3>
+                <p class="show">
+                    ERA Grain Free de Salmón y Venado para perros adultos de Raza Pequeñas
+                    Pienso para perros adultos de razas pequeñas sin cereales.
+                </p>
+                <span class="hide" id="hidetext2">
+                    <p>
+                        De salmón y venado,
+                        carne fresca como primer ingrediente y batata. Nutrición equilibrada de alta
+                        calidad. Con frutas, verduras, vitaminas y un sabor excepcional.
+                    </p>
+                </span>
+             <button class="readmorebtn" id="hidetextbtn2">Leer mas</button>
+            </div>
+            <div class="track-precios-ofertas">
+                <img src="Imagenes/Imagen_3_alimentos.png" alt="Oferta1" width="200px" height="180px">
+                <div class="precios-ofertas">
+                    <p><span class="precio-aumentado"><u>88000$</u></span></p>
+                    <p><span class="precio">82790</span>$</p>
+                </div>
+                <a href="#" class="agregar-carrito btn_3" data-id="3">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="oferta_1">
+            <div class="ofertatxt">
+                <h3>Amigo calcio</h3>
+                <p class="show">
+                    AMIGO CALCIO, es un suplemento nutricional de calcio y fósforo con vitaminas C,
+                    D3, B1 y B6 para perros y gatos de todas las razas y edades.
+                </p>
+                <span class="hide" id="hidetext3">
+                    <p >
+                        Suministre AMIGO CALCIO, vía oral de forma directa o desmenuzado junto con el
+                        alimento, diariamente.
+                    </p>
+                </span>
+                <button class="readmorebtn" id="hidetextbtn3">Leer mas</button>
+            </div>
+            <div class="track-precios-ofertas">
+                <img src="Imagenes/Img_med_2.png" alt="Oferta1" width="200px" height="180px">
+                <div class="precios-ofertas">
+                    <p><span class="precio-aumentado"><u>30000$</u></span></p>
+                    <p><span class="precio">27200</span>$</p>
+                </div>
+                <a href="#" class="agregar-carrito btn_3" data-id="13">Agregar al carrito</a>
+            </div>
+        </div>
+        
+    </section>
+    <main class="productos" id="productos">
+        <div class="titulos_productos">
+            <h2>Productos</h2>
+            <h2>Alimentos</h2>
+        </div>
+        <div class="contenedor-carrusel">
+            <div class="carrusel">
+                <div class="slick-list" id="slick-list">
+                    <button class="slick_arrow slick-prev" id="button-prev" data-button="button-prev"
+                        onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                            class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <path fill="currentColor"
+                                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="slick-track track-1" id="track">
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img_1_alimentos.jpg" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Champion Dog</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Alimento ideal para perros con metabolismo rápido y estómago pequeño, Con
+                                        requerimientos nutricionales específicos y croquetas pequeñas acorde al tamaño
+                                        de su mandíbula. OVO PROTEÍNA La proteína del huevo, de fácil digestión y con
+                                        aminoácidos esenciales que permiten un sano desarrollo.</p>
+                                    <p><span class="precio">30000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="1">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_Alimentos_2.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Agility Gold</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+
+                                        La selección de un alimento adecuado para tu mascota es muy importante para
+                                        garantizar su crecimiento, desarrollo y salud. Con esta opción de Agility Gold
+                                        podrás cubrir las necesidades nutricionales y energéticas de tu perro.
+
+                                        Tu mascota siempre saludable
+                                        Ellos son parte de la familia y nos regalan su compañía y su cariño. Para que se
+                                        mantengan sanos y fuertes, una alimentación balanceada es esencial. Bríndale a
+                                        tu perro los nutrientes que necesita para que pueda correr, saltar y jugar todo
+                                        el día.
+
+                                    </p>
+
+                                    <p><span class="precio">36000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="2">Agregar al carrito</a>
+                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Imagen_3_alimentos.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Era</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        ERA Grain Free de Salmón y Venado para perros adultos de Raza Pequeñas
+                                        Pienso para perros adultos de razas pequeñas sin cereales. De salmón y venado,
+                                        carne fresca como primer ingrediente y batata. Nutrición equilibrada de alta
+                                        calidad. Con frutas, verduras, vitaminas y un sabor excepcional.
+
+                                    </p>
+                                    <p><span class="precio">82790</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="3">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_Alimentos_4.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>BR Dog</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Br For Dog - Adulto Raza Mediana, es un grano libre de salmón y patata Receta no
+                                        sólo le proporcionará a su perro con el sabor que les gusta, sino también ayudar
+                                        a mejorar la digestibilidad y eliminar posibles intolerancias ingredientes
+                                        mediante la eliminación de los granos y el uso de una importante fuente de
+                                        proteínas, el salmón.
+                                    </p>
+                                    <p><span class="precio">292000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="4">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_5_alimento.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Canes Gold</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Alimento extruido en forma de ricas y delicadas croquetas, formulado para cubrir
+                                        los requerimientos nutricionales de mantenimiento en razas medianas, grandes y
+                                        gigantes.
+
+                                        Contiene ácidos grasos y minerales orgánicos para garantizar la condición
+                                        corporal y estado del pelaje.
+
+                                        Recomendaciones de uso: Divida en dos la ración diaria del alimento de su perro,
+                                        de acuerdo a la siguiente tabla de alimentación.
+                                    </p>
+                                    <p><span class="precio">40900</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="5">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_1_alimentos_gatos.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Wiskas</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Es capaz de mejorar el tracto urinario, mientras sus ingredientes potenciales
+                                        nutren a tu mascota de adentro hacia afuera, tiene una rica mezcla de vegetales,
+                                        fibra y carne. Aporta una alimentación completa, cada croqueta tiene un rico
+                                        relleno cremoso que de verdad le encantará, es apta para ser consumida por gatos
+                                        adultos mayores a un año.
+                                    </p>
+                                    <p><span class="precio">127920</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="6">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box" i>
+                                <img src="Imagenes/Img_2_alimentos_gatos.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Cookie Gatos</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Alimento energético, completo y equilibrado, altamente digestible y de elevada
+                                        palatabilidad, destinado al mantenimiento de gatos de cualquier raza y tamaño.
+                                        Elaborado con materias primas de alta calidad.
+                                        Copiado de:
+                                        https://www.agro-natura.com/producto/bb-cookie-alimento-para-gatos-20-kg/
+
+                                    </p>
+                                    <p><span class="precio">127620</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="7">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img-ali3-gatos.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Pro Plan</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Alimento completo y balanceado para gatos poco activos o con exceso de peso.
+                                        Es una tecnología exclusiva, gracias a la reducción de un 35%* de las grasas,
+                                        junto con unos niveles elevados de proteínas y fibras naturales, para reducir
+                                        peso y mantener una condición corporal saludable. *respecto de la fórmula PRO
+                                        PLAN® Adult con OptiPrebio®
+                                    </p>
+                                    <p><span class="precio">17254</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="8">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img-ali4-gatos.jpg" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Royal Chanin</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        La salud de los gatos es delicada y muchos gatos adultos pueden tener problemas
+                                        de salud, ya sea relacionados con el peso, las bolas de pelo u otras
+                                        enfermedades comunes. Los gatos son animales enigmáticos, por lo que no siempre
+                                        es fácil detectar y diagnosticar sus sensibilidades. Sin embargo, es fundamental
+                                        proporcionarles los mejores cuidados de forma proactiva para que disfruten de
+                                        una salud óptima. Obtén más información sobre nuestras soluciones relacionadas:
+                                        Appetite Control; Light Weight; Hair & Skin; Urinary; Digestive; Hairball;
+                                        Dental Care.
+                                    <p><span class="precio">54000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="9">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img-ali1-cab.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Campeon Derby</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Es un alimento 100% cocido, para suministrar a equinos adultos, con trabajo
+                                        intenso destinados a competencias de todo tipo o en estados de convalecencia,
+                                        como suplemento a los pastos, según el tipo de manejo, la cantidad y calidad de
+                                        forraje.
+                                    </p>
+                                    <p><span class="precio">128400</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="10">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-ali2-cab.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Cipa</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Es un alimento 100% cocido, para suministrar a equinos adultos, con trabajo
+                                        intenso destinados a competencias de todo tipo o en estados de convalecencia,
+                                        como suplemento a los pastos, según el tipo de manejo, la cantidad y calidad de
+                                        forraje.
+                                    </p>
+                                    <p><span class="precio">132400</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="10">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slick_arrow slick-next" id="button-next" data-button="button-next"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="titulo_medicamentos">
+            <h2>Medicamentos</h2>
+        </div>
+        <div class="contenedor-carrusel">
+            <div class="carrusel">
+                <div class="slick-list" id="slick-list">
+                    <button class="slick_arrow slick-prev" id="button-prev" data-button="button-prev"
+                        onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                            class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <path fill="currentColor"
+                                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="slick-track track-2" id="track">
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_med_1.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Simparica Trio</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Simparica Trio es una tableta muy manejable que tu amigo peludo puede comer
+                                        fácilmente. Si lo intenta, ¡le encantará! Además, no necesita alimentarse con
+                                        comida y es seguro para cachorros de 8 semanas.
+                                        Desparasitar a tu perro nunca fue tan cómodo: Simparica Trio hace la función de
+                                        dos o más agentes antiparasitarios
+                                    </p>
+                                    <p><span class="precio">41400</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="11">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_Med_2.jpg" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Gastropet</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Producto homeopático en tabletas que sirve como coadyuvante en el tratamiento de
+                                        los procesos de irritación de la mucosa gástrica y de modo preventivo.
+                                        Desparasitar a tu perro nunca fue tan cómodo: Simparica Trio hace la función de
+                                        dos o más agentes antiparasitarios
+                                    </p>
+                                    <p><span class="precio">47900</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="12">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_med_2.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Amigo calcio</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        AMIGO CALCIO, es un suplemento nutricional de calcio y fósforo con vitaminas C,
+                                        D3, B1 y B6 para perros y gatos de todas
+                                        las razas y edades.
+
+                                        Suministre AMIGO CALCIO, vía oral de forma directa o desmenuzado junto con el
+                                        alimento, diariamente.
+                                    </p>
+                                    <p><span class="precio">27900</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="13">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                    <img src="Imagenes/Img_Med_4.png" alt="Imagenes_ali_1">
+                                    <div class="productostxt">
+                                        <h3>Cardiozepril</h3>
+                                        <P>Calidad premium</P>
+                                        <p class="descripcion">
+                                            Tratamiento de la insuficiencia cardíaca congestiva leve ó moderada en perros de 5 ó más kg de peso vivo. Tratamiento de la insuficiencia renal crónica en gatos de 2,5 ó más kg de peso vivo.
+                                        </p>
+                                        <p><span class="precio">16890</span>$</p>
+                                        <a href="#" class="agregar-carrito btn_3" data-id="14">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img-med1-gatos.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Bravecto</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Antiparasitario externo de acción sistémica. Solución tópica para gatos.
+
+                                        Solución translúcida de incolora a amarilla.
+                                        
+                                        Este medicamento de uso veterinario está destinado al tratamiento y prevención de infestaciones de pulgas y para el tratamiento y control de infestaciones por garrapatas que proporciona:
+                                        
+                                        actividad inmediata y persistente durante 12 semanas para matar pulgas (Ctenocephalides felis y C. canis),
+                                        actividad inmediata y persistente durante 12 semanas para matar garrapatas (Ixodes ricinus, Rhipicephalus sanguineus).
+                                        Las pulgas y garrapatas deben adherirse al hospedador y comenzar a alimentarse para exponerse a la substancia activa. El efecto comenzará en las 8 horas siguientes a la fijación para las pulgas y 12 horas para las garrapatas.
+                                        
+                                        El producto controla eficazmente las poblaciones de pulgas en las áreas a las cuales tienen acceso los gatos tratados.                                    
+                                    </p>
+                                    <p><span class="precio">91700</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="15">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-med3-gatos.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>UROVIER</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Insuficiencia renal crónica (IRC), infecciones del tracto urinario, Cistitis, formación y disolución de cálculos de estruvita, Síndrome Urológico Felino (FUS o FLUTD*). Prostatitis y afecciones benignas de próstata.
+
+                                        Síndrome Urológico Felino, FUS o FLUTD: grupo de síntomas de las vías urinarias del gato, que incluye distensión, obstrucción de la uretra o constante eliminación de orina si la uretra no está obstruida. Sus causas principales son los cálculos vesicales, obstrucciones de la uretra, infecciones de las vías urinarias o el cáncer del aparato urinario.
+                                    </p>
+                                    <p><span class="precio">16929</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="16">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img.med2-gatos.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Attack GMP</h3>
+                                    <p class="descripcion">
+                                        Attack GMP Gatos Pulguicida de última generación – Imidacloprid: la droga menos tóxica para perros y gatos – Imidacloprid: utilizado como Spot On no se absorbe por piel, condición que hace altamente seguro su uso prolongado tanto en cachorros como en adultos. Elimina pulgas entre 12 y 24 horas, evitando la reinfestacion durante 4 semanas.
+                                    </p>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">25900</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="17">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Ima-med1-cab.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Cabatel</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Endectocida de amplio espectro indicado en Equinos para el tratamiento y control
+                                        de parásitos gastrointestinales, pulmonares y cutáneos tales como: Strongylus
+                                        vulgaris, Strongylus edentatus, Strongylus equinus: (fases infectantes larvarias y
+                                        adultos). Triodontophorus spp. Oxyuris equi, Trichostrongylus axei, Strongyloides
+                                        westeri, Parafilaria multipapillosa. Onchocerca spp, Draschia megastoma,
+                                        Habronema spp, Anoplocephala magna, Anoplocephala perfoliata,
+                                        Paranoplocephala mamillana. Echinococcus granulosus, Dictyocaulus arnfieldi y
+                                        Gasterophilus spp                                    </p>
+                                    <p>
+                                    <span class="precio">31200</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="18">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img-med2-cab.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Pareun®</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Pareun® es indicado para el tratamiento de las enfermedades infecciosas bacterianas en equinos causadas por agentes sensibles a Amikacina. Los agentes etiológicos susceptibles al Pareun® son: Escherichia coli, Enterobacter aerogenes, Klebsiella pneumoniae, Listeria monocytogenes, Pseudomonas aeruginosa, Salmonella newport, Salmonella typhimurium, Serratia marcescens, Staphylococcus aureus y Staphylococcus intermedius.
+
+                                        Algunas enfermedades que acometen los caballos son procedentes de infecciones bacterianas causadas por estos microorganismos y están generalmente relacionadas con el tracto respiratorio, trastornos hepáticos, músculo-esqueléticas, tractos geniturinario y gastrointestinal, sistemas nervioso, piel y enfermedades oculares.                                   </p>
+                                    <p>
+                                    <p><span class="precio">65000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="19">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-med3-cab.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Aminomix</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Suplemento con nutrientes esenciales para la alimentación del caballo atleta. Reúne en su formulación macro y microminerales, vitaminas, levaduras, además de aminoácidos esenciales y de importancia.
+
+                                        Contiene hierro, cobre y zinc quelatados, lo que mejora el aprovechamiento de los mismos y asegura la absorción de las vitaminas por la no formación de complejos insolubles.
+                                    <p>
+                                    <p><span class="precio">176700</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="20">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <div class="productostxt">
+                                    <img src="Imagenes/img-med3-cab.png" alt="Imagenes_ali_1" height="160px">
+                                    <h3>Dog show</h3>
+                                    <P>Calidad premium</P>
+                                    <p class="descripcion">
+                                        Suplemento con nutrientes esenciales para la alimentación del caballo atleta. Reúne en su formulación macro y microminerales, vitaminas, levaduras, además de aminoácidos esenciales y de importancia.
+
+                                        Contiene hierro, cobre y zinc quelatados, lo que mejora el aprovechamiento de los mismos y asegura la absorción de las vitaminas por la no formación de complejos insolubles.
+                                    <p>
+                                    <p><span class="precio">176700</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="20">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slick_arrow slick-next" id="button-next" data-button="button-next"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="titulo_Accesorios">
+            <h2>Accesorios</h2>
+        </div>
+        <div class="contenedor-carrusel">
+            <div class="carrusel">
+                <div class="slick-list" id="slick-list">
+                    <button class="slick_arrow slick-prev" id="button-prev" data-button="button-prev"
+                        onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                            class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <path fill="currentColor"
+                                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="slick-track track-3" id="track">
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-acc-1.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>collar para perro o gato</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">23000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="21">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-acc-2.jpg" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Pelota para perro</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">15000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="22">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img-acc-3.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Casa para perro</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">60000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="23">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-acc1-gatos.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Ratones de juguete para tus gato</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">45000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="24">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-acc2-gatos.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>raton de jueguete para tus gatos</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">20000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="25">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-acc3-gatos.png" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Casa para tu gato</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">75000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="26">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-acc1-cab.jpg" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Montura de caballo</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">110000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="27">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/img-acc2-cab.jpg" alt="Imagenes_ali_1">
+                                <div class="productostxt">
+                                    <h3>Bozal para caballo</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">50000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="28">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_Acc_1.jpg" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Pelota</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">28000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="29">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div class="box">
+                                <img src="Imagenes/Img_Acc_2.png" alt="Imagenes_ali_1" height="160px">
+                                <div class="productostxt">
+                                    <h3>Cepillo para tus Mascotas</h3>
+                                    <P>Calidad premium</P>
+                                    <p><span class="precio">20000</span>$</p>
+                                    <a href="#" class="agregar-carrito btn_3" data-id="30">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slick_arrow slick-next" id="button-next" data-button="button-next"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Aqui puedes contactarnos con nosotros</p>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0" nonce="y4yaHood"></script>
+            <h2>Comentarios</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://miportafolio-2.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+
+    <!-- <div class="ctn-lbl-comentarios"><label class="lbl-comentar">Lista de comentarios</label></div>
+    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="1"></div> -->
+    <script src="./main.js"></script>
+
+    </footer>
+    <div class="ctn-lbl-comentarios"><label class="lbl-comentar">Lista de comentarios</label></div>
+    <script src="javascripts/Botones.js"></script>
+</body>
+
+</html>
